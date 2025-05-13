@@ -8,7 +8,7 @@ function App() {
   const [result, setResult]=useState(null);
 
   const convert= async()=>{
-    const res=await axios.post('http://localhost:4000/convert',
+    const res=await axios.post('https://backend-myid.onrender.com/convert',
       {
         amt: parseFloat(amount),
       });
